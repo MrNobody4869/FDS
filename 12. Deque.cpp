@@ -167,3 +167,62 @@ Additional Information:
 9. The deque has a fixed size of 6 elements (modifiable in `SIZE`).
 10. Ensure inputs are integers for proper execution and avoid overflow.
 */
+
+
+
+
+
+
+
+
+/*
+
+---
+
+### **Objectives**:
+1. Understand the **deque** (Double-Ended Queue) data structure and its operations.
+2. Learn to implement a deque using arrays or linked lists.
+3. Explore real-world applications of deque in scheduling and data processing.
+4. Develop skills in handling insertion and deletion from both ends of a queue.
+5. Analyze the advantages of using deque over standard queues or stacks.
+
+---
+
+### **Short Theory**:
+
+1. **Definition**:  
+   - A **deque** is a linear data structure that allows **insertion** and **deletion** from both the front and rear ends.  
+
+2. **Types of Deques**:  
+   - **Input-Restricted Deque**: Insertions allowed at only one end; deletions allowed at both ends.  
+   - **Output-Restricted Deque**: Deletions allowed at only one end; insertions allowed at both ends.  
+
+3. **Key Operations**:  
+   - **InsertFront**: Add an element to the front.  
+   - **InsertRear**: Add an element to the rear.  
+   - **DeleteFront**: Remove an element from the front.  
+   - **DeleteRear**: Remove an element from the rear.  
+   - **PeekFront/PeekRear**: Access the front or rear element without removal.  
+   - **IsEmpty/IsFull**: Check if the deque is empty or full.  
+
+4. **Implementation**:  
+   - **Array-Based**:  
+     - Uses a circular array for fixed-size implementation with wrap-around logic.  
+   - **Linked List-Based**:  
+     - Dynamic implementation using nodes with pointers for front and rear.  
+
+5. **Applications**:  
+   - **Task Scheduling**: Managing tasks with dynamic priorities.  
+   - **Sliding Window Algorithms**: Efficiently finding maximum or minimum in a range.  
+   - **Palindrome Checking**: Comparing characters from both ends of a string.  
+   - **Undo/Redo Systems**: Tracking actions for backward and forward operations.  
+
+6. **Advantages**:  
+   - Supports dynamic addition and removal from both ends.  
+   - More flexible than standard queues and stacks.  
+
+7. **Disadvantages**:  
+   - **Array-Based**: Fixed size may require resizing for larger data.  
+   - **Linked List-Based**: Higher memory usage due to extra pointers.  
+
+*/
