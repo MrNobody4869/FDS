@@ -68,3 +68,59 @@ for i in range(min(5, n)):
 
 # Top 5 scores after Bubble Sort:
 # 91.2 82.3 80.5 75.5 68.9
+
+
+
+
+
+
+
+'''
+///OBJECTIVES///
+
+Understand the concept of sorting algorithms and their role in organizing data.
+Learn and implement:
+Selection Sort: A simple comparison-based sorting technique.
+Bubble Sort: A basic sorting algorithm that repeatedly swaps adjacent elements.
+Gain insights into the performance of sorting algorithms and their time complexity.
+Display the top five scores after sorting the array.
+Short Theory
+Sorting Algorithms: Sorting is the process of arranging elements of a list in a specific order (e.g., ascending or descending). It is a fundamental operation used to organize data for efficient searching and analysis.
+
+Selection Sort:
+Concept: Finds the smallest (or largest) element in the unsorted portion and swaps it with the first unsorted element.
+Steps:
+1.Start with the first element.
+2.Find the minimum element in the unsorted section.
+3.Swap it with the first unsorted element.
+4.Repeat for the remaining unsorted section.
+
+Complexity:
+Time Complexity: Big Oh of (N square) for all cases
+Space Complexity: Big Oh of (1)
+
+Bubble Sort:
+Concept: Repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the wrong order.
+Steps:
+Traverse the array from the start.
+Compare adjacent elements and swap them if needed.
+Repeat until no more swaps are required.
+
+Complexity:
+Time Complexity: Best is (N), avg/worst is (N square)
+Space Complexity: Big Oh of (1)
+
+Comparison of Sorting Algorithms:
+
+Selection Sort is preferred when the number of swaps must be minimized.
+Bubble Sort is easier to implement but less efficient due to its higher number of swaps.
+Applications: Sorting is critical in:
+
+Preparing datasets for binary or ternary searches.
+Ranking systems (e.g., top scores).
+Real-world use cases like leaderboards, scheduling, and analytics.
+Python Tools Used:
+
+Implementation of sorting using loops and conditions.
+Comparison of outputs for efficiency evaluation.
+'''
