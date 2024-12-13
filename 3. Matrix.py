@@ -89,3 +89,60 @@ for row in transpose_result:
 # Enter the elements of the second matrix row by row:
 # 5 6
 # 7 8
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+'''///OBJECTIVES///
+Understand the representation and manipulation of two-dimensional arrays (matrices) in Python.
+Learn to perform basic matrix operations, including:
+Addition of two matrices.
+Subtraction of two matrices.
+Multiplication of two matrices.
+Transposition of a matrix.
+Develop problem-solving skills by implementing mathematical operations on matrices using Python’s data structures.
+
+
+///THEORY///
+Matrix Representation: A matrix is a collection of numbers arranged in rows and columns, forming a two-dimensional data structure. In Python, matrices can be represented using nested lists, where each sublist corresponds to a row of the matrix.
+
+Key Characteristics of Matrices:
+
+Dimensions: Defined by the number of rows and columns.
+Indexing: Elements can be accessed using [row][column] indices.
+Operations: Matrices support mathematical operations that adhere to specific rules, such as matching dimensions for addition or compatibility for multiplication.
+Basic Matrix Operations:
+
+Addition/Subtraction: Performed element-wise; matrices must have the same dimensions.
+Multiplication: Follows the dot product rule, where the number of columns in the first matrix must match the number of rows in the second.
+Transpose: Swaps the rows and columns of a matrix.
+Applications: Matrix operations are fundamental in various domains, including:
+
+Computer Graphics: For transformations and projections.
+Data Science: As the foundation for linear algebra and machine learning.
+Physics and Engineering: To model and solve systems of equations.
+Python Tools: Matrix operations can be implemented using:
+
+Nested Lists: Python’s built-in data structures for custom implementations.
+Libraries like NumPy: To optimize and simplify operations with built-in functions.
+'''
+
+
+
+
+
+
