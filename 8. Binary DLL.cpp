@@ -160,3 +160,93 @@ int main() {
 
     return 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+---
+
+### **Objectives**
+1. Understand the concept and implementation of **Doubly Linked Lists (DLL)**.
+2. Learn to:
+   - Store binary numbers using a doubly linked list.
+   - Compute 1’s and 2’s complements of a binary number.
+   - Perform the addition of two binary numbers stored in a doubly linked list.
+3. Practice implementing operations on doubly linked lists and manipulating linked structures.
+
+---
+
+### **Short Theory**
+
+**Doubly Linked List (DLL):**
+A doubly linked list is a linear data structure where each node contains three components:
+1. **Data**: The value stored in the node.
+2. **Next Pointer**: A reference to the next node in the sequence.
+3. **Previous Pointer**: A reference to the previous node in the sequence.
+
+Unlike singly linked lists, DLLs allow traversal in both directions.
+
+**Key Operations in DLL:**
+1. **Insertion**:
+   - At the beginning, end, or a specific position.
+   - Adjust both `next` and `previous` pointers.
+2. **Deletion**:
+   - Remove a node by updating the pointers of adjacent nodes.
+3. **Traversal**:
+   - Forward traversal (from head to tail).
+   - Backward traversal (from tail to head).
+
+**Binary Number Representation in DLL:**
+Each digit (0 or 1) of a binary number is stored in a node of the doubly linked list. This allows efficient traversal and manipulation of binary digits.
+
+**1’s and 2’s Complement Operations:**
+1. **1’s Complement**:
+   - Traverse the list and flip each bit (0 → 1, 1 → 0).
+2. **2’s Complement**:
+   - Compute the 1’s complement.
+   - Add 1 to the least significant bit (LSB) using addition logic.
+
+**Addition of Two Binary Numbers:**
+1. Traverse the two binary numbers stored in DLL from the tail (LSB).
+2. Add corresponding bits along with a carry.
+3. Store the result in a new DLL.
+
+**Time Complexity**:
+1. **Insertion/Deletion**: O(1) for the head or tail; O(n) for arbitrary positions.
+2. **Traversal**: O(n), where (n) is the number of nodes.
+3. **1’s and 2’s Complement**: O(n) (requires traversing the entire list).
+4. **Addition of Two Binary Numbers**: O(n) (traversal and bit-wise addition).
+
+**Applications**:
+- Efficient representation and manipulation of numbers in binary form.
+- Used in arithmetic operations in digital systems.
+- Dynamic data representation with bidirectional traversal.
+
+**Advantages of DLL**:
+1. Allows forward and backward traversal.
+2. Efficient insertion and deletion at both ends.
+
+**Disadvantages of DLL**:
+1. Requires extra memory for the `previous` pointer.
+2. Slightly more complex to implement compared to singly linked lists.
+
+---
+
+This assignment helps students understand advanced linked list structures and their applications in numerical operations, fostering problem-solving skills in dynamic data handling.
+
+*/
+
