@@ -65,3 +65,86 @@ int main() {
 
     return 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+### **Objectives**
+1. Understand the **Stack Abstract Data Type (ADT)** and its application.
+2. Learn to:
+   - Reverse a string using a stack.
+   - Check if a string is a palindrome.
+   - Handle spaces, punctuation, and case sensitivity in palindrome checks.
+3. Explore the practical use of stacks for solving string-based problems.
+
+---
+
+### **Short Theory**
+
+**Stack:**
+A stack is a linear data structure that follows the **Last-In-First-Out (LIFO)** principle, where the last element inserted is the first to be removed. It is widely used for temporary storage and reversal operations.
+
+**Key Operations in Stack:**
+1. **Push**: Add an element to the top of the stack.
+2. **Pop**: Remove the element from the top of the stack.
+3. **Peek/Top**: Retrieve the element at the top without removing it.
+4. **IsEmpty**: Check if the stack is empty.
+
+**Palindrome:**
+A palindrome is a sequence of characters that reads the same backward as forward, ignoring spaces, punctuation, and case sensitivity. Examples:
+- **Palindrome**: "A man, a plan, a canal: Panama"
+- **Not a Palindrome**: "Hello, World!"
+
+**Using Stacks to Check Palindromes:**
+1. Push each character of the string onto the stack.
+2. Pop characters from the stack to reverse the string.
+3. Compare the reversed string with the original string (ignoring spaces and case).
+
+**Steps to Solve the Problem:**
+1. **Reverse String**:
+   - Traverse the string and push each character onto the stack.
+   - Pop characters from the stack and concatenate them to form the reversed string.
+2. **Check for Palindrome**:
+   - Normalize the string (convert to lowercase and remove non-alphanumeric characters).
+   - Compare the normalized string with its reversed version.
+3. **Handle Edge Cases**:
+   - Empty strings or single-character strings are always palindromes.
+   - Strings with special characters or spaces need preprocessing.
+
+**Time Complexity**:
+1. **Push/Pop Operations**: O(1) for each character.
+2. **String Reversal**: O(n), where (n) is the length of the string.
+3. **Palindrome Check**: O(n) for normalization and comparison.
+
+**Space Complexity**:
+- O(n), as the stack stores up to (n) characters during reversal.
+
+**Applications**:
+- Palindrome checks in natural language processing.
+- Reversing sequences (strings, numbers, etc.).
+- Parsing expressions in programming languages.
+
+---
+
+This assignment demonstrates the practical application of stacks for string manipulation, helping students understand data structure fundamentals and problem-solving techniques.
+*/
+
+
+
