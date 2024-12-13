@@ -114,3 +114,54 @@ Additional Information:
 9. This implementation is useful for scenarios like ticket counters, order processing, or scheduling tasks.
 10. Make sure to test the program with various inputs to verify edge cases.
 */
+
+
+
+/*
+
+### **Objectives**:
+1. Understand the **circular queue** data structure and its operations.
+2. Learn to implement a circular queue using arrays for efficient memory utilization.
+3. Explore real-world applications of circular queues in scheduling and buffer management.
+4. Develop a program to simulate a pizza ordering system using a circular queue.
+5. Analyze how circular queues prevent memory wastage in fixed-size queues.
+
+---
+
+### **Short Theory**:
+
+1. **What is a Circular Queue?**  
+   - A **circular queue** is a linear data structure that connects the rear of the queue to the front, forming a circle.  
+   - It avoids memory wastage by reusing empty spaces created by dequeuing elements.  
+
+2. **Key Features**:  
+   - **Front**: Tracks the first element of the queue.  
+   - **Rear**: Tracks the last element of the queue.  
+   - **Wrap-around**: When the rear or front reaches the end of the array, it wraps around to the beginning.  
+
+3. **Key Operations**:  
+   - **Enqueue**: Add an element to the rear of the queue.  
+     - Increment the rear pointer (wrap-around if necessary).  
+     - Check if the queue is full before insertion.  
+   - **Dequeue**: Remove an element from the front of the queue.  
+     - Increment the front pointer (wrap-around if necessary).  
+     - Check if the queue is empty before removal.  
+   - **Peek**: Access the front element without removing it.  
+   - **IsFull**: Check if the queue is full.  
+   - **IsEmpty**: Check if the queue is empty.  
+
+4. **Applications**:  
+   - **Order Management**: Handling first-come-first-serve orders in restaurants (e.g., pizza orders).  
+   - **Buffering**: Circular buffers in real-time systems like audio or video streaming.  
+   - **Task Scheduling**: Efficiently managing tasks in round-robin scheduling.  
+   - **Network Management**: Storing packets in routers.  
+
+5. **Advantages**:  
+   - Prevents memory wastage compared to a standard linear queue.  
+   - Efficient for fixed-size buffers and real-time systems.  
+
+6. **Disadvantages**:  
+   - Fixed size limits the number of elements.  
+   - Needs careful implementation to handle wrap-around conditions.  
+
+*/
