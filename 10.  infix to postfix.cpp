@@ -135,6 +135,66 @@ int main() {
 // The final value in the stack will be the result of the evaluation.
 // Operator Precedence:
 
+
+
+
+
+/*
+---
+
+### **Objectives:**
+1. Understand the Stack Abstract Data Type (ADT).
+2. Learn to implement stack operations for practical applications.
+3. Explore expression conversion techniques from infix to postfix format.
+4. Evaluate postfix expressions using stack operations.
+5. Grasp operator precedence and associativity for parsing expressions effectively.
+
+---
+
+### **Theory:**
+1. **Infix, Postfix, and Prefix Notations**:
+   - **Infix Notation**: Operators are written in-between operands, e.g., \( A + B \).
+   - **Postfix Notation**: Operators follow operands, e.g., \( AB+ \), eliminating the need for parentheses.
+   - **Prefix Notation**: Operators precede operands, e.g., \( +AB \).
+
+2. **Why Postfix Notation?**
+   - Removes ambiguity due to operator precedence.
+   - Eliminates the need for parentheses.
+   - Easier for machines to evaluate using stacks.
+
+3. **Stack ADT**:
+   - A **Last-In-First-Out (LIFO)** structure where the last element added is the first to be removed.
+   - Common operations: 
+     - **Push**: Add an element to the top.
+     - **Pop**: Remove the top element.
+     - **Peek/Top**: Retrieve the top element without removing it.
+
+4. **Infix to Postfix Conversion Algorithm**:
+   - **Operator Precedence**:
+     - Multiplication (*) and division (/) have higher precedence than addition (+) and subtraction (-).
+     - Parentheses have the highest precedence.
+   - **Associativity**:
+     - Most operators are left-to-right associative.
+   - **Steps**:
+     1. Traverse the infix expression.
+     2. Use a stack to temporarily hold operators and parentheses.
+     3. Append operands to the postfix expression directly.
+     4. Pop operators from the stack to the postfix expression based on precedence rules.
+
+5. **Postfix Expression Evaluation**:
+   - Steps:
+     1. Traverse the postfix expression.
+     2. Push operands onto the stack.
+     3. When encountering an operator, pop the top two operands, apply the operator, and push the result back.
+
+6. **Applications**:
+   - Parsing expressions in compilers.
+   - Calculator and interpreter implementation.
+   - Evaluating mathematical or logical expressions in software systems.
+
+Would you like me to expand or help with implementation?
+*/
+
 // The precedence of * and / is higher than that of + and -. The algorithm ensures that higher-precedence operators are applied first.
 
 // sample input:A+B*c
