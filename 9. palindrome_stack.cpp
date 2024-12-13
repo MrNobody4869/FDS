@@ -7,7 +7,7 @@ using namespace std;
 // Function to print original string followed by reversed string using stack
 void printOriginalAndReversed(const string& str) {
     stack<char> s;
-
+    
     // Push each character of the string to the stack
     for (char ch : str) {
         s.push(ch);
