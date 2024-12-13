@@ -99,3 +99,59 @@ Additional Information:
 9. User interaction is facilitated via a menu-driven approach in `main`.
 10. Ensure inputs are valid (integers within reasonable range) for proper functionality.
 */
+
+
+
+/*
+### **Objectives**:
+1. Understand the **queue** Abstract Data Type (ADT).
+2. Learn to implement queue operations for real-world applications.
+3. Explore how job scheduling uses queues in operating systems.
+4. Develop a program to simulate job addition and deletion operations using arrays or linked lists.
+
+---
+
+### **Theory**:
+1. **What is a Queue?**:
+   - A queue is a linear data structure that follows the **First-In-First-Out (FIFO)** principle:
+     - The element added first is removed first.
+     - New elements are added to the **rear**, and elements are removed from the **front**.
+
+2. **Key Operations of a Queue**:
+   - **Enqueue**: Add an element to the rear of the queue.
+   - **Dequeue**: Remove an element from the front of the queue.
+   - **Peek/Front**: Retrieve the front element without removing it.
+   - **IsFull/IsEmpty**: Check if the queue is full or empty.
+
+3. **Applications of Queue in Job Scheduling**:
+   - Operating systems use queues to manage processes and tasks.
+   - In a job scheduling context:
+     - Jobs are enqueued as they arrive.
+     - Jobs are dequeued for execution in the order they were added.
+     - No priority differentiation; purely FIFO-based execution.
+
+4. **Implementation Approaches**:
+   - **Array-based Queue**:
+     - Fixed size; wrap-around using circular logic.
+     - Easier to implement but has size limitations.
+   - **Linked List-based Queue**:
+     - Dynamic size; more memory-efficient for varying workloads.
+
+5. **Steps to Simulate a Job Queue**:
+   - Initialize an empty queue.
+   - Accept jobs as user input and enqueue them.
+   - Process jobs (dequeue) based on FIFO order.
+   - Display the current state of the queue after each operation.
+
+6. **Algorithm**:
+   **Enqueue Operation**:
+   - Check if the queue is full (overflow condition).
+   - Increment the rear pointer.
+   - Add the new job to the queue.
+   
+   **Dequeue Operation**:
+   - Check if the queue is empty (underflow condition).
+   - Retrieve and remove the front job.
+   - Increment the front pointer.
+
+*/
